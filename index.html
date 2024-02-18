@@ -7,6 +7,7 @@
   <link rel="stylesheet" href="style.css">
   <link href="https://cdn.jsdelivr.net/npm/daisyui@4.7.2/dist/full.min.css" rel="stylesheet" type="text/css" />
   <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://kit.fontawesome.com/07228dffb8.js" crossorigin="anonymous"></script>
   <title>FL Paribahan</title>
 
 </head>
@@ -48,7 +49,7 @@
     </nav>
   </header>
 
-  <main class="mt-5 mb-10">
+  <main class="mt-5">
     <!-- banner section -->
     <section class="mx-4 md:mx-12 lg:mx-16">
       <div class="hero bg bg-cover bg-center h-[500px] w-full mx-auto "
@@ -185,15 +186,120 @@
       </div>
 
       <!-- buy your ticket here -->
-      <div class="flex">
-          <!-- left side div -->
-          <div>
-            
+      <div class="my-20 p-10 mx-4 md:mx-12 lg:mx-16 bg-white flex justify-between">
+        <!-- left side div -->
+        <div class="w-3/5">
+          <h3 class="text-xl mb-2">Select Your Seat</h3>
+          <hr class="border-b border-dashed border-gray-400">
+          <div class="flex justify-between my-2">
+            <div class="flex"><img src="images/seat-gray.png" alt=""> Available</div>
+            <div class="flex"><img src="images/seat-green-filled.png" alt=""> Selected</div>
           </div>
+          <hr class="border-b border-dashed border-gray-400">
+          <!-- seats list -->
+          <div class="mt-5">
+            <div class="text-left mb-6">
+              <kbd class="kbd cursor-pointer w-16 h-12 py-2 px-4">
+                <img src="images/steering.png" alt="">
+              </kbd>
+            </div>
 
-          <!-- right side div  -->
-          <div></div>
+            <div class="flex flex-col gap-5">
+              <div class="flex gap-10">
+                <div class="flex gap-5">
+                  <kbd class="kbd cursor-pointer px-6 bg-gray-100 text-gray-500">A1</kbd>
+                  <kbd class="kbd cursor-pointer px-6 bg-gray-100 text-gray-500">A2</kbd>
+                </div>
+                <div class="flex gap-5">
+                  <kbd class="kbd cursor-pointer px-6 bg-gray-100 text-gray-500">A3</kbd>
+                  <kbd class="kbd cursor-pointer px-6 bg-gray-100 text-gray-500">A4</kbd>
+                </div>
+              </div>
+              <div class="flex gap-10">
+                <div class="flex gap-5">
+                  <kbd class="kbd cursor-pointer px-6 bg-gray-100 text-gray-500">B1</kbd>
+                  <kbd class="kbd cursor-pointer px-6 bg-gray-100 text-gray-500">B2</kbd>
+                </div>
+                <div class="flex gap-5">
+                  <kbd class="kbd cursor-pointer px-6 bg-gray-100 text-gray-500">B3</kbd>
+                  <kbd class="kbd cursor-pointer px-6 bg-gray-100 text-gray-500">B4</kbd>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- right side div  -->
+        <div class="w-1/3 border-l-2 border-dashed border-gray-400">
+          <div class="px-4 ">
+            <h2 class="twxt-2xl mb-4">Select Your Seat</h2>
+            <hr class="border-b border-dashed border-gray-400 mb-3">
+          </div>
+          <!-- table div  -->
+          <div class="">
+            <div>
+              <div class="overflow-x-auto bg-gray-200 px-4 mx-4">
+                <table class="table">
+                  <!-- head -->
+                  <thead>
+                    <tr>
+                      <th>Seat <span class="bg-[#37e610] text-white font-bold px-1 rounded-sm">0</span></th>
+                      <th>Class</th>
+                      <th>Price</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <!-- row 1 -->
+                    <tr>
+                      <td>A1</td>
+                      <td>Business</td>
+                      <td>550</td>
+                    </tr>
+                    <!-- row 2 -->
+                    <tr>
+                      <td>A2</td>
+                      <td>Business</td>
+                      <td>550</td>
+                    </tr>
+                    <!-- row 3 -->
+                    <tr>
+                      <td>A3</td>
+                      <td>Business</td>
+                      <td>550</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+
+            <div class="px-4 bg-gray-200">
+              <hr class="border-b border-solid border-gray-300">
+            </div>
+            <div class="flex justify-between bg-gray-200 mx-4 px-7 text-sm">
+              <p>Total Price</p>
+              <p>BDT <span>0</span></p>
+            </div>
+
+            <!-- coupon apply here  -->
+            <div class="bg-gray-200 mx-4 px-7 text-sm">
+              <div class="relative w-full">
+                <!-- Input Field -->
+                <input type="text" class="py-2 px-4 rounded-l pr-10 w-full md:w-64 rounded-2xl focus:border-none">
+
+                <!-- Button Inside Input -->
+                <button class="absolute top-0 right-0 h-full bg-[#37e610] text-white rounded-2xl px-4 md:px-8">
+                  Apply
+                </button>
+              </div>
+              <div class="flex justify-between">
+                <p>Grand Total</p>
+                <p>BDT <span>0</span></p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- right side div ends here -->
       </div>
+      <!-- buy your ticket end here above -->
     </section>
   </main>
 
