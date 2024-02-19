@@ -106,20 +106,41 @@ function checkInput() {
 
 
 
-function newFunction() {
-  let couponCodes = document.getElementById('NEW15')
-  let exactCoupon = couponCodes.innerText
+function Couponcheck() {
+  let new15Coupon = document.getElementById('NEW15');
+  let new15CouponText = new15Coupon.innerText;
+  const coupleCoupon = 'Couple 20';
   let Coupon = document.getElementById('applyButton');
   const couponInput = document.getElementById('couponInput');
   const couponCode = couponInput.value;
   Coupon = couponCode;
 
+  // total price ---//
 
+  const totalPriceElement = document.getElementById('totalPrice');
+  const totalPrice = totalPriceElement.innerText;
 
-  if (Coupon === exactCoupon) {
+  // discount for new15--//
+
+  const discountedprice = totalPrice * 0.85;
+  let grandTotalPrice = discountedprice;
+  const discountedprice2 = totalPrice * 0.80;
+  let grandTotalPrice2 = discountedprice2;
+
+  
+  if (Coupon === new15CouponText) {
     let couponInputField = document.getElementById('couponField')
-    couponInputField = couponInputField.classList.add('hidden')
+    couponInputField.classList.add('hidden')
+    document.getElementById('grandTotalPrice').innerText = grandTotalPrice
+
   }
+  
+  else if(Coupon === coupleCoupon) {
+    let couponInputField = document.getElementById('couponField')
+    couponInputField.classList.add('hidden')
+    document.getElementById('grandTotalPrice').innerText = grandTotalPrice2
+  }
+  
   else {
     alert('Your Coupon is Invalid!');
   }
