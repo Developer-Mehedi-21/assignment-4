@@ -189,7 +189,7 @@
               <img src="images/fare.png" alt="">
             </div>
             <div>
-              <h1 class="text-3xl font-bold">500 Taka</h1>
+              <h1 class="text-3xl font-bold">550 Taka</h1>
               <p class="text-gray-400 font-bold">Per Seat</p>
             </div>
           </div>
@@ -324,7 +324,7 @@
           <div class="card w-full max-w-sm">
             <div>
               <div class="overflow-x-auto bg-gray-100 px-4 mx-4 rounded-t-3xl pt-3">
-                <table class="table">
+                <table class="table" id="table">
                   <!-- head -->
                   <thead>
                     <tr>
@@ -334,36 +334,18 @@
                       <th>Price</th>
                     </tr>
                   </thead>
-                  <tbody>
-                    <!-- row 1 -->
-                    <tr>
-                      <td>A1</td>
-                      <td>Business</td>
-                      <td>550</td>
-                    </tr>
-                    <!-- row 2 -->
-                    <tr>
-                      <td>A2</td>
-                      <td>Business</td>
-                      <td>550</td>
-                    </tr>
-                    <!-- row 3 -->
-                    <tr>
-                      <td>A3</td>
-                      <td>Business</td>
-                      <td>550</td>
-                    </tr>
-                  </tbody>
+
+                  <tbody></tbody>
+
                 </table>
               </div>
             </div>
 
 
             <div
-              class="lg:py-3 flex justify-between bg-gray-100 lg:mx-4 lg:pl-8 lg:pr-12 text-sm border-t border-dashed border-gray-400 font-bold"
-              id="totalPrice">
+              class="lg:py-3 flex justify-between bg-gray-100 lg:mx-4 lg:pl-8 lg:pr-12 text-sm border-t border-dashed border-gray-400 font-bold">
               <p>Total Price</p>
-              <p>BDT <span>0</span></p>
+              <p>BDT <span id="totalPrice">0</span></p>
             </div>
 
             <!-- coupon apply here  -->

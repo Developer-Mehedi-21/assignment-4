@@ -47,6 +47,10 @@ function setSeatId() {
 
     kbd.addEventListener('click', function () {
       kbd.style.backgroundColor = '#37e610';
+      kbd.style.color = '#FFFFFF';
+
+
+
 
       // --- increase the number o ticket ---//
 
@@ -64,13 +68,38 @@ function setSeatId() {
       const seatCount = currentSeatCount - 1;
       currentSeatElement.innerText = seatCount;
 
+      // --- increase the price of of total price ---//
+
+      const currentTotalPriceElement = document.getElementById('totalPrice');
+      const currentTotalPriceText = currentTotalPriceElement.innerText;
+      const currentTotalPrice = parseInt(currentTotalPriceText);
+      const totalPrice = currentTotalPrice + 550;
+      currentTotalPriceElement.innerText = totalPrice;
+
+      // add new row once i click to the seat ---//
+
+      const tableBody = document.querySelector('#table tbody')
+
+      const newRow = document.createElement('tr');
+      newRow.appendChild(createTableCell(seatId.toUpperCase()));
+      newRow.appendChild(createTableCell('Business'));
+      newRow.appendChild(createTableCell('550'));
+      tableBody.appendChild(newRow);
+
+      function createTableCell(content) {
+        var Column = document.createElement('td');
+        Column.textContent = content;
+        return Column;
+      }
+
+
       // --- disable all the seats to be selected once you reached to 4 selected seats--//
 
-      
+
 
     });
   })
 }
 
-// calling the dunction above ---
+// calling the function above ---
 setSeatId()
