@@ -51,8 +51,7 @@
           </ul>
         </div>
         <div class="navbar-end">
-          <a class="btn bg-green-100 text-[#37e610] font-extrabold border border-[#37e610]">Bus <span><img
-                src="images/bus-icon.png" alt=""></span></a>
+          <a class="btn btn-outline btn-success">Bus <span><img src="images/bus-icon.png" alt=""></span></a>
         </div>
       </div>
     </nav>
@@ -135,7 +134,7 @@
           </p>
         </div>
         <!-- container of 3 divs for flex  -->
-        <div class="flex h-80 items-center mx-4 md:mx-12 lg:mx-16 bg-white rounded-2xl border ">
+        <div class="flex h-80 items-center mx-4 md:mx-12 lg:mx-16 bg-white rounded-2xl">
           <!-- left side div  -->
           <div class="p-10">
             <div class="flex justify-between items-center">
@@ -157,7 +156,7 @@
             </div>
 
             <!-- route and time div  -->
-            <div class="space-y-3 mt-6 border bg-gray-100 rounded-2xl p-7">
+            <div class="space-y-3 mt-6 bg-gray-100 rounded-2xl p-7">
               <div class="flex justify-between">
                 <p>Route</p>
                 <p class="font-bold">Dhaka - Sylhet</p>
@@ -196,7 +195,7 @@
       </div>
 
       <!-- buy your ticket here -->
-      <div class="my-20 p-10 mx-4 md:mx-12 lg:mx-16 bg-white flex justify-between">
+      <div class="my-20 p-10 mx-4 md:mx-12 lg:mx-16 bg-white flex justify-between rounded-3xl">
         <!-- left side div -->
         <div class="w-3/5">
           <h3 class="text-lg font-bold mb-2">Select Your Seat</h3>
@@ -206,37 +205,111 @@
             <div class="flex items-center gap-1 font-bold text-[#37e610]"><img src="images/seat-green-filled.png"
                 alt=""> Selected</div>
           </div>
+
           <!-- seats list -->
-          <div class="mt-5">
-            <div class="text-left mb-6">
-              <kbd class="kbd cursor-pointer">
-                <i class="fa-solid fa-dharmachakra"></i>
-              </kbd>
+          <div class="mt-6 text-end">
+            <kbd class="kbd w-28 h-12 cursor-pointer"><img src="images/steering.png" alt="" class="w-8 h-8"></kbd>
+          </div>
+
+          <div class="flex gap-12 lg:justify-between mt-5 text-gray-500">
+
+            <!-- left seats -->
+            <div class="flex gap-2 lg:gap-10">
+
+              <div class="flex flex-col gap-3 items-end">
+                <div class="flex items-center">
+                  <p class="text-lg font-bold mr-2">A</p>
+                  <kbd class="kbd w-28 h-12 cursor-pointer">A1</kbd>
+                </div>
+                <div class="flex items-center">
+                  <p class="text-lg font-bold mr-2">B</p>
+                  <kbd class="kbd w-28 h-12 cursor-pointer">B1</kbd>
+                </div>
+                <div class="flex items-center">
+                  <p class="text-lg font-bold mr-2">C</p>
+                  <kbd class="kbd w-28 h-12 cursor-pointer">C1</kbd>
+                </div>
+                <div class="flex items-center">
+                  <p class="text-lg font-bold mr-2">D</p>
+                  <kbd class="kbd w-28 h-12 cursor-pointer">D1</kbd>
+                </div>
+                <div class="flex items-center">
+                  <p class="text-lg font-bold mr-2">E</p>
+                  <kbd class="kbd w-28 h-12 cursor-pointer">E1</kbd>
+                </div>
+                <div class="flex items-center">
+                  <p class="text-lg font-bold mr-2">F</p>
+                  <kbd class="kbd w-28 h-12 cursor-pointer">F1</kbd>
+                </div>
+                <div class="flex items-center">
+                  <p class="text-lg font-bold mr-2">G</p>
+                  <kbd class="kbd w-28 h-12 cursor-pointer">G1</kbd>
+                </div>
+                <div class="flex items-center">
+                  <p class="text-lg font-bold mr-2">H</p>
+                  <kbd class="kbd w-28 h-12 cursor-pointer">H1</kbd>
+                </div>
+                <div class="flex items-center">
+                  <p class="text-lg font-bold mr-2">I</p>
+                  <kbd class="kbd w-28 h-12 cursor-pointer">I1</kbd>
+                </div>
+                <div class="flex items-center">
+                  <p class="text-lg font-bold mr-2">J</p>
+                  <kbd class="kbd w-28 h-12 cursor-pointer">J1</kbd>
+                </div>
+
+              </div>
+
+              <div class="flex flex-col text-center gap-3">
+                <kbd class="kbd w-28 h-12 cursor-pointer">A2</kbd>
+                <kbd class="kbd w-28 h-12 cursor-pointer">B2</kbd>
+                <kbd class="kbd w-28 h-12 cursor-pointer">C2</kbd>
+                <kbd class="kbd w-28 h-12 cursor-pointer">D2</kbd>
+                <kbd class="kbd w-28 h-12 cursor-pointer">E2</kbd>
+                <kbd class="kbd w-28 h-12 cursor-pointer">F2</kbd>
+                <kbd class="kbd w-28 h-12 cursor-pointer">G2</kbd>
+                <kbd class="kbd w-28 h-12 cursor-pointer">H2</kbd>
+                <kbd class="kbd w-28 h-12 cursor-pointer">I2</kbd>
+                <kbd class="kbd w-28 h-12 cursor-pointer">J2</kbd>
+              </div>
+
             </div>
 
-            <div class="flex flex-col gap-5">
-              <div class="flex gap-10">
-                <div class="flex gap-5">
-                  <kbd class="kbd cursor-pointer px-6 bg-gray-100 text-gray-500">A1</kbd>
-                  <kbd class="kbd cursor-pointer px-6 bg-gray-100 text-gray-500">A2</kbd>
-                </div>
-                <div class="flex gap-5">
-                  <kbd class="kbd cursor-pointer px-6 bg-gray-100 text-gray-500">A3</kbd>
-                  <kbd class="kbd cursor-pointer px-6 bg-gray-100 text-gray-500">A4</kbd>
-                </div>
+            <!-- right seats -->
+            <div class="flex items-center gap-3 lg:gap-10">
+
+              <div class="flex flex-col text-center gap-3">
+                <kbd class="kbd w-28 h-12 cursor-pointer">A2</kbd>
+                <kbd class="kbd w-28 h-12 cursor-pointer">B2</kbd>
+                <kbd class="kbd w-28 h-12 cursor-pointer">C2</kbd>
+                <kbd class="kbd w-28 h-12 cursor-pointer">D2</kbd>
+                <kbd class="kbd w-28 h-12 cursor-pointer">E2</kbd>
+                <kbd class="kbd w-28 h-12 cursor-pointer">F2</kbd>
+                <kbd class="kbd w-28 h-12 cursor-pointer">G2</kbd>
+                <kbd class="kbd w-28 h-12 cursor-pointer">H2</kbd>
+                <kbd class="kbd w-28 h-12 cursor-pointer">I2</kbd>
+                <kbd class="kbd w-28 h-12 cursor-pointer">J2</kbd>
               </div>
-              <div class="flex gap-10">
-                <div class="flex gap-5">
-                  <kbd class="kbd cursor-pointer px-6 bg-gray-100 text-gray-500">B1</kbd>
-                  <kbd class="kbd cursor-pointer px-6 bg-gray-100 text-gray-500">B2</kbd>
-                </div>
-                <div class="flex gap-5">
-                  <kbd class="kbd cursor-pointer px-6 bg-gray-100 text-gray-500">B3</kbd>
-                  <kbd class="kbd cursor-pointer px-6 bg-gray-100 text-gray-500">B4</kbd>
-                </div>
+
+              <div class="flex flex-col text-center gap-3">
+                <kbd class="kbd w-28 h-12 cursor-pointer">A2</kbd>
+                <kbd class="kbd w-28 h-12 cursor-pointer">B2</kbd>
+                <kbd class="kbd w-28 h-12 cursor-pointer">C2</kbd>
+                <kbd class="kbd w-28 h-12 cursor-pointer">D2</kbd>
+                <kbd class="kbd w-28 h-12 cursor-pointer">E2</kbd>
+                <kbd class="kbd w-28 h-12 cursor-pointer">F2</kbd>
+                <kbd class="kbd w-28 h-12 cursor-pointer">G2</kbd>
+                <kbd class="kbd w-28 h-12 cursor-pointer">H2</kbd>
+                <kbd class="kbd w-28 h-12 cursor-pointer">I2</kbd>
+                <kbd class="kbd w-28 h-12 cursor-pointer">J2</kbd>
               </div>
+
             </div>
+
           </div>
+          <!-- seat list ends here -->
+
+
         </div>
         <!-- right side div  -->
         <div class="w-1/3 border-l-2 border-dashed border-gray-100">
@@ -374,6 +447,37 @@
     </div>
 
   </main>
+
+  <!-- footer section  -->
+  <footer class="bg-gray-950 h-60 -mt-20 text-white">
+    <div class="flex justify-between px-20 pt-10 items-center border-b border-dashed pb-4">
+      <div>
+        <h2 class="text-2xl font-bold pb-3">FL Paribahan</h2>
+        <p>FL Paribahan is a digital <br>platform to make your
+          daily commuting better.</p>
+      </div>
+
+      <div>
+        <h1 class="text-xl">Download our app</h1>
+        <div class="border border-white rounded-xl flex gap-2 p-4 w-fit">
+          <img src="images/playstore.png" alt="">
+          <div>
+            <p>GET IT ON</p>
+            <p>PLAYSTORE</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="py-4 px-20 flex justify-between">
+      <p class="text-gray-400 text-sm">@all rights reserved, P-Ticket services limited.2024</p>
+      <div class="text-sm flex gap-5">
+        <a href="#">Terms & condition</a>
+        <a href="#">Return & refund policy</a>
+        <a href="#">Privacy policy</a>
+      </div>
+    </div>
+  </footer>
 
   <script src="script.js"></script>
 </body>
