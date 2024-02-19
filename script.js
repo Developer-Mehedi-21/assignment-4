@@ -6,6 +6,11 @@ document.getElementById('goAndBuyBtn').addEventListener('click', function () {
   divToView.scrollIntoView({ behavior: "smooth" });
 })
 
+document.getElementById('search').addEventListener('click', function () {
+  const divToView = document.getElementById('buyYourTicket');
+  divToView.scrollIntoView({ behavior: "smooth" });
+})
+
 // --- Click to the get started button to go to buy ticket section ---//
 
 document.getElementById('getSartedBtn').addEventListener('click', function () {
@@ -105,6 +110,17 @@ function checkInput() {
 }
 
 
+function checkCoupon() {
+  const CouponinputField = document.getElementById('couponInput');
+  const isCouponFieldNotEmpty = CouponinputField.value.trim() !== '';
+
+  if (isCouponFieldNotEmpty) {
+    applyButton.removeAttribute('disabled');
+  } else {
+    applyButton.setAttribute('disabled', 'true');
+  }
+}
+
 
 function Couponcheck() {
   let new15Coupon = document.getElementById('NEW15');
@@ -127,20 +143,20 @@ function Couponcheck() {
   const discountedprice2 = totalPrice * 0.80;
   let grandTotalPrice2 = discountedprice2;
 
-  
+
   if (Coupon === new15CouponText) {
     let couponInputField = document.getElementById('couponField')
     couponInputField.classList.add('hidden')
     document.getElementById('grandTotalPrice').innerText = grandTotalPrice
 
   }
-  
-  else if(Coupon === coupleCoupon) {
+
+  else if (Coupon === coupleCoupon) {
     let couponInputField = document.getElementById('couponField')
     couponInputField.classList.add('hidden')
     document.getElementById('grandTotalPrice').innerText = grandTotalPrice2
   }
-  
+
   else {
     alert('Your Coupon is Invalid!');
   }
